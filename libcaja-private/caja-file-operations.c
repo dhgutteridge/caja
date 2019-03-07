@@ -955,7 +955,7 @@ init_common (gsize job_size,
 	CommonJob *common;
 	GdkScreen *screen;
 
-	common = g_malloc0 (job_size);
+	common = g_malloc0 (job_size * sizeof (CommonJob));
 
 	if (parent_window) {
 		common->parent_window = parent_window;
